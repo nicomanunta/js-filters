@@ -22,7 +22,7 @@ img{
     border-radius: 20px;
 }
 .altezza{
-    height: 80vh;
+    height: 70vh;
 }
 
 .button{
@@ -50,7 +50,7 @@ img{
 
 label{
     color: white;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 @media screen and (max-width: 767px) {
@@ -65,9 +65,7 @@ label{
         max-height: 400px;
         
     }
-    input[type="range"]{
-        width: 100%;
-    }
+    
 }
 
 
