@@ -1,3 +1,4 @@
+document.getElementById('downloadBtn').style.display = 'none';
 // caricamento immagine
 document.getElementById('immagine').addEventListener('change', function(event) {
     let file = event.target.files[0];
@@ -10,6 +11,9 @@ document.getElementById('immagine').addEventListener('change', function(event) {
         document.getElementById('immagineContainer').innerHTML = '';
         document.getElementById('immagineContainer').appendChild(imageElement);
     };
+
+    document.getElementById('downloadBtn').style.display = 'inline';
+
 
     reader.readAsDataURL(file);
 });
@@ -99,3 +103,39 @@ function addFilterEventHandlers() {
 
 
 addFilterEventHandlers();
+
+// Aggiungi un gestore di eventi click per il pulsante di download
+document.getElementById('downloadBtn').addEventListener('click', function() {
+    // Ottieni l'elemento immagine
+    let img = document.querySelector('#immagineContainer img');
+
+    // Calcola le dimensioni effettive dell'immagine
+    let width = img.naturalWidth;
+    let height = img.naturalHeight;
+
+    // Crea un canvas
+    let canvas = document.createElement('canvas');
+    let ctx = canvas.getContext('2d');
+
+    // Imposta le dimensioni del canvas
+    canvas.width = width;
+    canvas.height = height;
+
+    // Disegna l'immagine sul canvas con i filtri applicati
+    ctx.filter = window.getComputedStyle(img).filter; // Applica i filtri CSS
+    ctx.drawImage(img, 0, 0, width, height);
+
+    // Crea un tag <a> per il download
+    let link = document.createElement('a');
+
+    // Imposta l'URL del canvas come attributo href del tag <a>
+    link.href = canvas.toDataURL('image/png');
+
+    // Imposta il nome del file come "immagine-filtrata"
+    link.download = 'immagine-filtrata.png';
+
+    // Simula il click sul link per avviare il download
+    link.click();
+});
+
+
