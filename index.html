@@ -14,29 +14,52 @@
                 <div class="mb-4 " id="immagineContainer"></div>
                 <label for="immagine" class="button">Carica Immagine</label>
                 <input type="file" id="immagine" accept="image/*">
-                <!-- <h3>Ciao come stai?</h3> -->
+                
+                
             </div>
         </div>
     </div>
     <div class="container">
         <div class="row">
             <div class="col-3">
-                <!-- <label for=""></label>
-                <input type="text"> -->
+                <label for="scalaGrigi">Scala di grigi</label>
+                <input type="range" id="scalaGrigi" min="0" max="100" value="0">
             </div>
-            <div class="col-3"></div>
-            <div class="col-3"></div>
-            <div class="col-3"></div>
+            <div class="col-3">
+                <label for="saturazione">Saturazione</label>
+                <input type="range" id="saturazione" min="0" max="200" value="100">
+            </div>
+            <div class="col-3">
+                <label for="sepia">Sepia</label>
+                <input type="range" id="sepia" min="0" max="100" value="0">
+            </div>
+            <div class="col-3">
+                <label for="invert">Invert</label>
+                <input type="range" id="invert" min="0" max="100" value="0">
+            </div>
         </div>
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-3"></div>
-            <div class="col-3"></div>
-            <div class="col-3"></div>
-            <div class="col-3"></div>
+            <div class="col-3">
+                <label for="contrasto">Contrasto</label>
+                <input type="range" id="contrasto" min="0" max="200" value="100">
+            </div>
+            <div class="col-3">
+                <label for="luminosita">Luminosità</label>
+                <input type="range" id="luminosita" min="0" max="200" value="100">
+            </div>
+            <div class="col-3">
+                <label for="blur">Blur</label>
+                <input type="range" id="blur" min="0" max="10" value="0">
+            </div>
+            <div class="col-3">
+                <label for="hueRotate">Rotazione Tonalità</label>
+                <input type="range" id="hueRotate" min="0" max="360" value="0">
+            </div>
         </div>
     </div>
+
 
 
     <script src="./js/script.js"></script>
