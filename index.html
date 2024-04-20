@@ -8,35 +8,35 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <div class="container">
+    <div class="container pt-4">
         <div class="row">
-            <div class="col-12 text-center align-content-center ">
+            <div class="col-12 altezza text-center align-content-center ">
                 <div class="mb-4 " id="immagineContainer"></div>
-                <label for="immagine" class="button">Carica Immagine</label>
+                <label for="immagine" class="button mb-2 ">Carica Immagine</label>
                 <input type="file" id="immagine" accept="image/*">
-                <button id="downloadBtn" class="button">Scarica Immagine</button>
+                <button id="downloadBtn" class="button mb-2">Scarica Immagine</button>
                 
             </div>
         </div>
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-3">
+            <div class="col-md-6 col-lg-3 col-12  text-center text-md-start text-lg-start ">
                 <label for="scalaGrigi">Scala di grigi</label>
                 <br>
                 <input type="range" class="form-range" id="scalaGrigi" min="0" max="100" value="0">
             </div>
-            <div class="col-3">
+            <div class="col-md-6 col-lg-3 col-12 text-center text-md-end text-lg-start ">
                 <label for="saturazione">Saturazione</label>
                 <br>
                 <input type="range" id="saturazione" min="0" max="200" value="100">
             </div>
-            <div class="col-3">
+            <div class="col-md-6 col-lg-3 col-12 text-center text-md-start text-lg-start ">
                 <label for="sepia">Sepia</label>
                 <br>
                 <input type="range" id="sepia" min="0" max="100" value="0">
             </div>
-            <div class="col-3">
+            <div class="col-md-6 col-lg-3 col-12 text-center text-md-end text-lg-start ">
                 <label for="invert">Invert</label>
                 <br>
                 <input type="range" id="invert" min="0" max="100" value="0">
@@ -45,22 +45,22 @@
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-3">
+            <div class="col-md-6 col-lg-3 col-12 text-center text-md-start text-lg-start ">
                 <label for="contrasto">Contrasto</label>
                 <br>
                 <input type="range" id="contrasto" min="0" max="200" value="100">
             </div>
-            <div class="col-3">
+            <div class="col-md-6 col-lg-3 col-12 text-center text-md-end text-lg-start ">
                 <label for="luminosita">Luminosità</label>
                 <br>
                 <input type="range" id="luminosita" min="0" max="200" value="100">
             </div>
-            <div class="col-3">
+            <div class="col-md-6 col-lg-3 col-12 text-center text-md-start text-lg-start ">
                 <label for="blur">Blur</label>
                 <br>
                 <input type="range" id="blur" min="0" max="10" value="0">
             </div>
-            <div class="col-3">
+            <div class="col-md-6 col-lg-3 col-12 text-center text-md-end text-lg-start ">
                 <label for="hueRotate">Rotazione Tonalità</label>
                 <br>
                 <input type="range" id="hueRotate" min="0" max="360" value="0">
